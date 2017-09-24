@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['submit'])) 
 {
-
 $message=
 '
 Full Name:	'.$_POST['fullname'].'<br />
@@ -36,10 +35,8 @@ Email:	'.$_POST['emailid'].'<br />
     $result = $mail->Send();		// Send!  
 	$message = $result ? 'Successfully Sent!' : 'Sending Failed!';      
 	unset($mail);
-
 }
 ?>
-
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -174,7 +171,7 @@ Email:	'.$_POST['emailid'].'<br />
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline" action="contact-form/contact-form.php" method="post">
+						<form class="form-inline" action="contact-form.php" method="post">
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
 									<label for="name" class="sr-only">Name</label>
@@ -189,6 +186,7 @@ Email:	'.$_POST['emailid'].'<br />
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<button type="submit" class="btn btn-primary btn-block">I am Attending</button>
+								<!--<input type="submit" name="submit" value="Send" />-->
 							</div>
 						</form>
 					</div>
@@ -217,7 +215,13 @@ Email:	'.$_POST['emailid'].'<br />
 				</div>
 			</div>
 		</footer>
+
+	
+
 	</div>
+	<!-- END fh5co-page>-->
+							
+
 	</div>
 	<!-- END fh5co-wrapper -->
 
