@@ -81,13 +81,16 @@
 		</header>
 
 		<!-- end:header-top -->
-		
+<?php
+if (isset($message01)){ echo "<div>" . $message01 . "</div>";}
+?>	
+					
 	<div class="fh5co-contact animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-md-push-2 animate-box">
 					<h2>Répondez S'il Vous Plaît</h2>
-					<!--<p>There are a number of ways to get in touch with me: you can simply leave a message below, call me at the number listed to the left, or send me a direct email. I can travel up to two hours for engagement sessions and wedding days. Graduation and portraits are only done locally.</p><br><br>-->
+					<!--<p>There are a number of ways to get in touch with me: you can simply leave a message below, call me at the number listed to the left, or send me a direct email. I can travel up to two hours for engagement sessions and wedding days. Graduation and portraits are only done locally.</p><br><br> -->
 
 				</div>
 				<div class="col-md-3">
@@ -133,7 +136,8 @@
 							</div>
 						</div>
 					</form>
-					<p><?php if(!empty($message01)) echo $message01; ?></p>
+
+
 						<div class="col-md-12">
 							<div class="form-group">
 								
