@@ -1,49 +1,44 @@
+var map;
 
-var google;
+function initMap() {
 
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(9.917091880291503, 78.1424909802915);
-    // 39.399872
-    // -8.224454
-    
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 9,
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 9.917091880291503, lng: 78.1424909802915},
+		zoom: 15,
+		styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+	});
 
-        // The latitude and longitude to center the map (always required)
-        center: myLatlng,
+	var marker = new google.maps.Marker({
 
-        // How you would like to style the map. 
-        scrollwheel: false,
-        styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
-    };
+	    position: {lat: 9.9157429, lng: 78.141142},
 
-    
+		map: map,
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+	    title: 'Sabareesh and Sharmili are Here!',
 
-    // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
-    
-    var addresses = ['S. V. S. V. Subramaniam Pushpavalli Kalyana Mahal'];
+	    icon: 'images/loc2.png'
+	});
 
-    for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map,
-                icon: 'images/loc.png'
-            });
+	var contentString = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Welcome!</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p>S V S V Subramaniam Pushpavalli Kalyana Mahal,' +
+	      'Behind Ganesh Theatre, D. D. Road, Pankajam Colony,' +
+		  'Kamarajar Salai, Madurai, Tamil Nadu 625009, India</p>'+
+	      '<p><b></b> <a href="#" target="_blank"> RSVP </a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
 
-        });
-    }
-    
+	var infowindow = new google.maps.InfoWindow({
+	   content: contentString,
+	   maxWidth: 400
+	});
+
+	marker.addListener('click', function() {
+		infowindow.open(map, marker);
+	});
+
 }
-google.maps.event.addDomListener(window, 'load', init);
