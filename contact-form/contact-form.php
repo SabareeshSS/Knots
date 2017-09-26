@@ -2,11 +2,11 @@
 if(isset($_POST['submit'])) 
 {
 $message=
-'Full Name:	'.$_POST['fullname'].'<br />
-Subject:	'.$_POST['subject'].'<br />
-Phone:	'.$_POST['phone'].'<br />
-Email:	'.$_POST['emailid'].'<br />
-Comments:	'.$_POST['comments'].'
+'Name		:	'.$_POST['fullname'].'<br />
+Mobile		:	'.$_POST['phone'].'<br />
+Email		:	'.$_POST['emailid'].'<br />
+Attendees	:	'.$_POST['subject'].'<br />
+Greetings	:	'.$_POST['comments'].'<br />
 ';
     require "phpmailer/class.phpmailer.php"; //include phpmailer class
       
@@ -28,7 +28,7 @@ Comments:	'.$_POST['comments'].'
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['fullname']);
     $mail->AddReplyTo($_POST['emailid'], $_POST['fullname']);
-    $mail->Subject = "New Contact Form Enquiry";      // Subject (which isn't required)  
+    $mail->Subject = "RSVP Received: A New Attendee";      // Subject (which isn't required)  
     $mail->MsgHTML($message);
  
     // Send To  
