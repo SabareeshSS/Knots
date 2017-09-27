@@ -777,11 +777,12 @@ figure {
 
 #fh5co-started .heading-section h2 {
   margin-bottom: 20px;
-  color: rgba(255, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  
 }
 
 #fh5co-started .heading-section p {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 0, 0, 0.4);
 }
 .groom-men img {
   margin-bottom: 20px;
