@@ -70,11 +70,11 @@ function validateEmail() {
 
 function validateMessage() {
   var message = document.getElementById('contact-message').value;
-  var required = 10;
+//  var required = 10;
   var left = required - message.length;
 
   if (left > 0) {
-    producePrompt(left + ' more characters required','message-error','red');
+    producePrompt(' Can\'t be empty','message-error','red');
     return false;
   }
 
@@ -86,7 +86,7 @@ function validateMessage() {
 function validateForm() {
   if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
     jsShow('submit-error');
-    producePrompt('You are almost done! Please enter valid details...', 'submit-error', 'red');
+    producePrompt('Please Fill up all cells', 'submit-error', 'red');
     setTimeout(function(){jsHide('submit-error');}, 2000);
 	return false;
   }
