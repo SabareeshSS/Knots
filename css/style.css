@@ -1268,7 +1268,8 @@ figure {
 }
 
 #fh5co-started .specialColor { 
-    background-color: rgba(255, 255, 255, 0.7);
+    color: #fcfcfc;
+  background: #F69D9D;
 }
 .js #loader {
   display: block;
