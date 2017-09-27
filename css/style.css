@@ -1267,6 +1267,9 @@ figure {
   display: none;
 }
 
+.specialColor { 
+    background-color: rgba(0, 0, 0, 0.06);
+}
 .js #loader {
   display: block;
   position: absolute;
