@@ -679,6 +679,27 @@ figure {
   font-size: 14px;
 }
 
+.contact-info {
+  margin-bottom: 4em;
+  padding: 0;
+}
+.contact-info li {
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+}
+.contact-info li i {
+  position: absolute;
+  top: .3em;
+  left: 0;
+  font-size: 22px;
+  color: #5a5a5a;
+}
+.contact-info li a {
+  color: #5a5a5a;
+}
+
 #fh5co-started {
   position: relative;
   background-size: cover;
