@@ -104,14 +104,14 @@
 <form name="form1" id="form1" action="contact-form/contact-form.php" method="post">
 				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="form-group">
 								<!--<label for="contact-name">Name</label>-->
 								<input type="text" class="form-control" id="contact-name" name="name" placeholder="Full Name" onkeyup='validateName()'>
 								<span class='error-message' id='name-error'></span>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="form-group">
 								<!--<label for="contact-email">Email Address</label>-->
 								<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" onkeyup='validateEmail()'>
@@ -128,7 +128,7 @@
 								
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="form-group">
 								<!--<label for="contact-phone">Mobile Number</label>-->
 								<input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Mobile" onkeyup='validatePhone()'>
@@ -138,11 +138,9 @@
 						<div class="col-md-6">
 							<div class="form-group">
 								<!--<label for="Additional">Number of Guests</label>-->
-								<select class="form-control" name="dropdown" size="1" placeholder="Number of Guests">
-								<option value="Option1">1</option>
-								<option value="Option2">2</option>
-								<option value="Option3">3</option>
-								<option value="Option4">4</option>
+								<select class="form-control" name="dropdown" size="1" placeholder="Are you attending?">
+								<option value="Attending">Yes! I am Attending</option>
+								<option value="Not Attending">No! I am not Attending</option>
 								</select>
 								<br />
 							</div>
@@ -166,7 +164,7 @@
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<input onclick='return validateForm()' value="I am Attending" class="btn btn-primary" name="submit" type="submit">
+								<input onclick='return validateForm()' value="RSVP Now" class="btn btn-primary" name="submit" type="submit">
 								<span class='error-message' id='submit-error'></span>
 							</div>
 						</div>
