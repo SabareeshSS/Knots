@@ -1267,7 +1267,7 @@ figure {
   display: none;
 }
 
-.specialColor { 
+#fh5co-started .specialColor { 
     background-color: rgba(255, 255, 255, 0.7);
 }
 .js #loader {
