@@ -75,20 +75,31 @@
 			</div>
 </header>
 
-<div id="fh5co-when-where" class="fh5co-section-gray">
+
+<div id="fh5co-started">
+		<div class="overlay"></div>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h2>Thank you so much for accepting the invitation!</h2>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section">
+						<h2><?php if(!empty($message)) echo $message; ?></h2>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1">
 						<form class="form-inline" action="index.html" method="post">
-						<div class="col-md-4 col-sm-4">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
 								<button type="submit" class="btn btn-primary btn-block">Return Home</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-</div>
+		</div>		
 
 <footer>
 			<div id="footer">
