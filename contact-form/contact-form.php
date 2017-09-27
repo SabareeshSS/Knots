@@ -35,10 +35,10 @@ Greetings			:	'.$_POST['message'].'<br />
     // Send To  
     $mail->AddAddress("sssabrsh@gmail.com", "Sabareesh"); // Where to send it - Recipient
     $result = $mail->Send();				  // Send!  
-    //$message01 = $result ? 'Thank you so much for accepting the invitation!' : 'Sorry for the inconvenience! Please do RSVP later.';
-    if ($result) {include('../success.html');}
+    $message01 = $result ? 'Thank you so much for accepting the invitation!' : 'Sorry for the inconvenience! Please do RSVP later.';
+    //if ($result) {include('../success.html');}
 	//echo $message01;
 	unset($mail);
 }
-	//header("Location: ../success.html");exit;
+	header("Location: ../success.html");exit;
 ?>
