@@ -44,14 +44,14 @@ function validateEmail() {
 
   if(email.length == 0) {
 
-    producePrompt('Email address is invalid!','email-error', 'red');
+    producePrompt('Email address is not filled out!','email-error', 'red');
     return false;
 
   }
 
   if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
-    producePrompt('Email address is invalid!', 'email-error', 'red');
+    producePrompt(' ', 'email-error', 'red');
     return false;
 
   }
