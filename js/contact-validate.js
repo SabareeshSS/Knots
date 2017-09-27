@@ -9,7 +9,7 @@ function validateName() {
 
   }
 	
-  producePrompt('Valid', 'name-error', 'green');
+  producePrompt(' ', 'name-error', 'green');
   return true;
 
 }
@@ -33,7 +33,7 @@ function validatePhone() {
       return false;
     }
 
-    producePrompt('Valid', 'phone-error', 'green');
+    producePrompt(' ', 'phone-error', 'green');
     return true;
 
 }
@@ -56,7 +56,7 @@ function validateEmail() {
 
   }
 
-  producePrompt('Valid', 'email-error', 'green');
+  producePrompt(' ', 'email-error', 'green');
   return true;
 
 }
@@ -71,7 +71,7 @@ function validateMessage() {
     return false;
   }
 
-  producePrompt('Valid', 'message-error', 'green');
+  producePrompt(' ', 'message-error', 'green');
   return true;
 
 }
