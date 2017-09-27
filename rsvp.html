@@ -101,38 +101,78 @@
 				</div>
 				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 					<div class="row">
-					<form name="form1" id="form1" action="contact-form/contact-form.php" method="post">
+<form name="form1" id="form1" action="contact-form/contact-form.php" method="post">
+				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" name="fullname" placeholder="Name" type="text">
+								<label for="contact-name">Name</label>
+								<input type="text" class="form-control" id="contact-name" name="name" placeholder="Ex: Sabareesh SS" onkeyup='validateName()'>
+								<span class='error-message' id='name-error'></span>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" name="emailid" placeholder="Email" type="text">
+								<label for="contact-phone">Mobile Number</label>
+								<input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 9952282231" onkeyup='validatePhone()'>
+								<span class='error-message' id='phone-error'></span>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" name="phone" placeholder="Mobile" type="text">
+								
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" name="subject" placeholder="Number of guests" type="text">
+								
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="contact-email">Email Address</label>
+								<input type="email" class="form-control" id="contact-email" name="email" placeholder="Ex: sssabrsh@gmail.com" onkeyup='validateEmail()'>
+								<span class='error-message' id='email-error'></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="Additional">Number of Guests</label>
+								<select class="form-control" name="dropdown" size="1" placeholder="Number of Guests">
+								<option value="Option1">1</option>
+								<option value="Option2">2</option>
+								<option value="Option3">3</option>
+								<option value="Option4">4</option>
+								</select>
+								<br />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea class="form-control" cols="30" rows="7" name="comments" placeholder="Greetings"></textarea>
+								<label for='contactMessage'>Your Message</label>
+								<textarea class="form-control" cols="30" rows="7" id='contact-message'  name='message'  placeholder="Greetings" onkeyup='validateMessage()'></textarea>
+								<span class='error-message' id='message-error'></span>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<input value="Yes! I am Attending!" class="btn btn-primary" type="submit" name="submit">
+								<input onclick='return validateForm()' value="Send Message" class="btn btn-primary" name="submit" type="submit">
+								<span class='error-message' id='submit-error'></span>
 							</div>
 						</div>
-					</form>
+					</div>
+				</div>
+				</form>
 						<div class="col-md-12">
 							<div class="form-group">
 								
