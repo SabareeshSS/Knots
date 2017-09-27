@@ -24,7 +24,7 @@ Greetings			:	'.$_POST['message'].'<br />
     
     // Authentication  
     $mail->Username   = "sawedssha@gmail.com"; 	// Your full Gmail address
-    $mail->Password   = "febx052018"; 			// Your Gmail password
+    $mail->Password   = "feb052018"; 			// Your Gmail password
       
     // Compose
     $mail->SetFrom($_POST['email'], $_POST['name']);
