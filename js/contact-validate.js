@@ -4,14 +4,14 @@ function validateName() {
 
   if(name.length == 0) {
 
-    producePrompt('Please Enter your Full Name...', 'name-error' , 'red')
+    producePrompt('Enter Full Name.', 'name-error' , 'red')
     return false;
 
   }
 
   if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
-    producePrompt('You are missing your Last Name...','name-error', 'red');
+    producePrompt('Enter Last Name too','name-error', 'red');
     return false;
 
   }
@@ -26,12 +26,12 @@ function validatePhone() {
   var phone = document.getElementById('contact-phone').value;
 
     if(phone.length == 0) {
-      producePrompt('Your mobile number is mandatory...', 'phone-error', 'red');
+      producePrompt('Enter Mobile number.', 'phone-error', 'red');
       return false;
     }
 
     if(phone.length != 10) {
-      producePrompt('Include area code too.', 'phone-error', 'red');
+      producePrompt('Validating...', 'phone-error', 'red');
       return false;
     }
 
@@ -51,14 +51,14 @@ function validateEmail() {
 
   if(email.length == 0) {
 
-    producePrompt('Your Email address is invalid!','email-error', 'red');
+    producePrompt('Email address is invalid!','email-error', 'red');
     return false;
 
   }
 
   if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
-    producePrompt('Your Email address is invalid!', 'email-error', 'red');
+    producePrompt('Email address is invalid!', 'email-error', 'red');
     return false;
 
   }
