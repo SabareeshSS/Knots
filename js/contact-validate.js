@@ -31,7 +31,7 @@ function validatePhone() {
     }
 
     if(phone.length != 10) {
-      producePrompt('Validating...', 'phone-error', 'red');
+      producePrompt('You have not entered 10 digits', 'phone-error', 'red');
       return false;
     }
 
