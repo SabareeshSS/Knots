@@ -1,13 +1,12 @@
 <?php
 if(isset($_POST['submit'])) 
 {
-
 $message=
 'Name of the Guest	:	'.$_POST['name'].'<br />
 Phone Number 		:	'.$_POST['phone'].'<br />
 Email Address		:	'.$_POST['email'].'<br />
 Number of Guests	:	'.$_POST['dropdown'].'<br />
-Greetings			:	'.$_POST['message'].'<br />
+Greetings		:	'.$_POST['message'].'
 ';
     require "phpmailer/class.phpmailer.php"; //include phpmailer class
       
