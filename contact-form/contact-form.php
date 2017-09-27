@@ -39,6 +39,6 @@ Greetings			:	'.$_POST['message'].'<br />
 	echo $message01;
 	unset($mail);
 }
-	header("Location: ../success.html");
-	exit;
+	//header("Location: ../success.html");
+	//exit;
 ?>
