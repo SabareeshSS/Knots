@@ -8,14 +8,7 @@ function validateName() {
     return false;
 
   }
-
-  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-
-    producePrompt('Enter Last Name too','name-error', 'red');
-    return false;
-
-  }
-
+	
   producePrompt('Valid', 'name-error', 'green');
   return true;
 
