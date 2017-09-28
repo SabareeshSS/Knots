@@ -4,16 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+	<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="js/jquery.min.js">');document.write('</'+'script'+'>')}</script>
+	<script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="http://2.bp.blogspot.com/-IQXNv-_CBLE/TpWcK7LL4VI/AAAAAAAAG0I/bcxYcqc_uI0/pinkpetal1.png";image_urls['rain2']="http://4.bp.blogspot.com/-teXCIicWPF4/TpWcLLg0A2I/AAAAAAAAG0U/IPPCr1gponc/pinkpetal2.png";image_urls['rain3']="http://3.bp.blogspot.com/-3JG9HLECCRU/TpWcLZGSYtI/AAAAAAAAG0g/zIJINua93TE/redpetal1.png";image_urls['rain4']="http://2.bp.blogspot.com/-BByhQEK5E24/TpWcLux4xRI/AAAAAAAAG0s/x2hIr1AV_Ac/redpetal2.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)]).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
 	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sabareesh Weds Sharmili</title>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-	
+	<!-- Font and Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -24,12 +24,18 @@
 	<link rel="stylesheet" href="css/superfish.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+	<!-- Customized style -->
 	<link rel="stylesheet" href="css/style.css">
-
-
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>	
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+	<!-- Google Map AIzaSyCM0bCVgYhyH-lO4svFYvuzJdNJgvuLZ0cs-->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM0bCVgYhyH-lO4svFYvuzJdNJgvuLZ0c&callback=initMap"></script>
+	<!-- Modernizr JS -->
+	<script src="js/google_map.js"></script>
+	<!-- jQuery -->
+	<script src="dist/scripts.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -37,8 +43,8 @@
 
 	</head>
 	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
+	<div id="fh5co-wrapper">
+	<div id="fh5co-page">
 	
 		<div class="fh5co-hero" data-section="home">
 			<div class="fh5co-overlay"></div>
@@ -48,6 +54,7 @@
 						<div class="container">
 							<div class="col-md-10 col-md-offset-1">
 								<div class="animate-box">
+									<h1>The Wedding</h1>
 									<h2>Thank You!</h2>
 								</div>
 							</div>
@@ -55,29 +62,9 @@
 					</div>
 				</div>
 			</div>
-</div>
-<header id="fh5co-header-section" class="sticky-banner">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">Sa&mdash;Sha</a></h1>
-					<!-- START #fh5co-menu-wrap -->
-					<nav id="fh5co-menu-wrap" role="navigation">
-						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li><a href="index.html" >Home</a></li>							
-							<li><a href="groom-bride.html" class="fh5co-sub-ddown">Meet Us</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a href="when-where.html">When &amp; Where</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="rsvp.html">RSVP</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-
+		</div>
 		
-<div id="fh5co-started">
+		<div id="fh5co-started">
 		<div class="overlay"></div>
 			<div class="container">
 				<div class="row animate-box">
@@ -103,7 +90,7 @@
 			</div>
 		</div>	
 
-<footer>
+		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
@@ -129,15 +116,8 @@
 
 	</div>
 	<!-- END fh5co-page>-->
-							
-
 	</div>
 	<!-- END fh5co-wrapper -->
-
-	<!-- Google Map 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-	<!-- jQuery -->
 	<script src="dist/scripts.min.js"></script>
 	</body>
 </html>

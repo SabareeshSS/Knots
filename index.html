@@ -5,20 +5,18 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 	
+	<!-- Shower -->
 	<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="js/jquery.min.js">');document.write('</'+'script'+'>')}</script>
-	<script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="http://2.bp.blogspot.com/-IQXNv-_CBLE/TpWcK7LL4VI/AAAAAAAAG0I/bcxYcqc_uI0/pinkpetal1.png";image_urls['rain2']="http://4.bp.blogspot.com/-teXCIicWPF4/TpWcLLg0A2I/AAAAAAAAG0U/IPPCr1gponc/pinkpetal2.png";image_urls['rain3']="http://3.bp.blogspot.com/-3JG9HLECCRU/TpWcLZGSYtI/AAAAAAAAG0g/zIJINua93TE/redpetal1.png";image_urls['rain4']="http://2.bp.blogspot.com/-BByhQEK5E24/TpWcLux4xRI/AAAAAAAAG0s/x2hIr1AV_Ac/redpetal2.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv')
-.css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)])
-.css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
+	<script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="http://2.bp.blogspot.com/-IQXNv-_CBLE/TpWcK7LL4VI/AAAAAAAAG0I/bcxYcqc_uI0/pinkpetal1.png";image_urls['rain2']="http://4.bp.blogspot.com/-teXCIicWPF4/TpWcLLg0A2I/AAAAAAAAG0U/IPPCr1gponc/pinkpetal2.png";image_urls['rain3']="http://3.bp.blogspot.com/-3JG9HLECCRU/TpWcLZGSYtI/AAAAAAAAG0g/zIJINua93TE/redpetal1.png";image_urls['rain4']="http://2.bp.blogspot.com/-BByhQEK5E24/TpWcLux4xRI/AAAAAAAAG0s/x2hIr1AV_Ac/redpetal2.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)]).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
+	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sabareesh Weds Sharmili</title>
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
 	
+	<!-- Font and Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -29,12 +27,18 @@
 	<link rel="stylesheet" href="css/superfish.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+	<!-- Customized style -->
 	<link rel="stylesheet" href="css/style.css">
-
-
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>	
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+	<!-- Google Map AIzaSyCM0bCVgYhyH-lO4svFYvuzJdNJgvuLZ0cs-->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM0bCVgYhyH-lO4svFYvuzJdNJgvuLZ0c&callback=initMap"></script>
+	<!-- Modernizr JS -->
+	<script src="js/google_map.js"></script>
+	<!-- jQuery -->
+	<script src="dist/scripts.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -42,9 +46,8 @@
 
 	</head>
 	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-	
+	<div id="fh5co-wrapper">
+	<div id="fh5co-page">	
 		<div class="fh5co-hero" data-section="home">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
@@ -72,21 +75,23 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="index.html" >Home</a></li>							
-							<li><a href="groom-bride.html" class="fh5co-sub-ddown">Meet Us</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a href="when-where.html">When &amp; Where</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="rsvp.html">RSVP</a></li>
+							<li class="active"><a href="#index" >Home</a></li>							
+							<li><a href="#meetus" class="fh5co-sub-ddown">Meet Us</a></li>
+							<li><a href="#events">Events</a></li>
+							<li><a href="#where">When &amp; Where</a></li>
+							<!--<li><a href="#madurai">Gallery</a></li>-->
+							<li><a href="#rsvp">RSVP</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<!-- end:header-top -->
+		<!-- end:header-top 15_d005sx-->
 		
-		<div id="fh5co-couple" class="fh5co-section-gray">
+		<!-- section index -->
+		<section id="index">
+			<div id="fh5co-couple" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row row-bottom-padded-md animate-box">
 					<div class="col-md-6 col-md-offset-3 text-center">
@@ -94,7 +99,9 @@
 							<img src="images/groom.jpg" class="img-responsive" ">
 							<h3>Sabareesh SS</h3>
 						</div>
-						<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><i class="icon-heart"></i></h2></div>
+						<div class="col-md-2 col-sm-2 col-xs-2 nopadding">
+							<h2 class="amp-center"><i class="icon-heart"></i></h2>
+						</div>
 						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
 							<img src="images/bride.jpg" class="img-responsive" ">
 							<h3>Sharmili PD</h3>
@@ -108,6 +115,18 @@
 							<p><strong>on Feb 05, 2018 &mdash; Madurai, Tamil Nadu</strong></p>
 							<h2>The perfect way to commemorate the amazing past 8 years!</h2>						
 						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="form-inline" action="#rsvp" method="post">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group"></div>							
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<button type="submit" class="btn btn-primary btn-block">Are you attending?</button>	
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -124,31 +143,241 @@
 				</div>
 			</div>
 		</div>
-		<div id="fh5co-started">
-		<div class="overlay"></div>
+		</section>
+		
+		<!-- section meetus -->
+		<section id="meetus">
+		<div id="fh5co-groom-bride">
 			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section">
-						<h2>We are all a little weird and life’s a little weird, and when we find someone whose weirdness is compatible with ours, we join up with them and fall in mutual weirdness and call it love.</h2>	
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h2>Groom &amp; Bride</h2>
 					</div>
 				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline" action="rsvp.html" method="post">
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									
-								</div>
+				<div class="row padding">
+					<div class="couple-wrap">
+						<div class="col-md-6 col-md-push-6 nopadding animate-box">
+							<img src="images/groom01.jpg" class="img-responsive" ">
+						</div>
+						<div class="col-md-6 col-md-pull-6 nopadding animate-box">
+							<div class="couple-desc">
+								<h3>Sabareesh</h3>
+								<p>
+								 Sharmili helped to bring out the best in me and encouraged me to achieve both personal, and professional, goals. In a sense, I really grew up with her. Sharmili is now a successful person with her strong intellectual skills. Throughout my journey, she always stood by my side, supporting through all of the highs and lows. 
+								</p>
+								<p class="fh5co-social-icons">
+									<a href="https://www.linkedin.com/in/sabareesh-ss-76596559"><i class="icon-linkedin2"></i></a>
+									<a href="https://www.facebook.com/SabareeshSathy"><i class="icon-facebook2"></i></a>
+									<a href="https://www.instagram.com/s.a.b.s.s/"><i class="icon-instagram"></i></a>
+									<!--<a href="#"><i class="icon-dribbble2"></i></a>
+									<a href="#"><i class="icon-youtube"></i></a>-->
+								</p>	
 							</div>
-							<div class="col-md-4 col-sm-4">
-								<button type="submit" class="btn btn-primary btn-block">SAVE THE DATE</button>
-								
+						</div>
+					</div>
+				</div>
+				<div class="row padding">
+					<div class="couple-wrap">
+						<div class="col-md-6 nopadding animate-box">
+							<img src="images/bride01.jpg" class="img-responsive" ">
+						</div>
+						<div class="col-md-6 nopadding animate-box">
+							<div class="couple-desc">
+								<h3>Sharmili</h3>
+								<p>
+								I already feel like a married couple but we know that there is still much to learn about love and togetherness. One thing that is certainly going to remain a constant though is that when Sabareesh is with me good laughs, good company, and a good time are guaranteed. Relationships are dynamic and as the past years have shown, we are committed to each other and can adapt to whatever changes come our way.
+								</p>
+								<p class="fh5co-social-icons">
+									<a href="#"><i class="icon-twitter2"></i></a>
+									<a href="#"><i class="icon-facebook2"></i></a>
+									<a href="#"><i class="icon-instagram"></i></a>
+								</p>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		</section>
+		
+		<!-- section events -->
+		<section id="events">
+		<div id="fh5co-guest">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section">
+						<h2>Rituals &amp; Events</h2>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-lg">
+					<div class="col-md-3 text-center animate-box">
+						<div class="groom-men">
+							<img src="images/Vagdana.jpg" class="img-responsive" ">
+							<h3>Vagdana</h3>
+							<h4 class="subheading">Sunday, 03<sup>rd</sup> September 2017</h4>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="groom-men">
+							<img src="images/Lagna01.jpg" class="img-responsive" ">
+							<h3>Lagna-Patra</h3>
+							<h4 class="subheading">Sunday, 04<sup>th</sup> February 2018</h4>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="groom-men">
+							<img src="images/Upanayana.jpg" class="img-responsive" ">
+							<h3>Upanayana</h3>
+							<h4 class="subheading">Monday, 05<sup>th</sup> February 2018</h4>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="groom-men">
+							<img src="images/Vivaha01.jpg" class="img-responsive" ">
+							<h3>Vivāha</h3>
+							<h4 class="subheading">Monday, 05<sup>th</sup> February 2018</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		<!-- section where -->
+		<section id="where">
+		<div id="fh5co-when-where" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h2>When &amp; Where</h2>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 text-center animate-box">
+						<div class="wedding-events">
+							<div class="ceremony-bg" style="background-image: url(images/reception.jpg);"></div>
+							<div class="desc">
+								<h3>Engagement &amp; Reception</h3>
+								<p><strong>Sunday, February 04, 2018, 6.00 PM - 8.00 PM @ Madurai</strong></p>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box">
+						<div class="wedding-events">
+							<div class="ceremony-bg" style="background-image: url(images/wedding.jpg);"></div>
+							<div class="desc">
+								<h3>Muhurthan &amp; Wedding </h3>
+								<p><strong>Monday, February 05, 2018, 8.00 AM - 10.00 AM @ Madurai</strong></p>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		<!-- section rsvp -->
+		<section id="rsvp">
+		<div id="fh5co-started">
+		<div class="overlay"></div>					
+		<div class="fh5co-contact animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section">
+						<h2>Répondez S'il Vous Plaît</h2>
+						<h3>Please Fill-up the form to notify you that you're attending. Thanks.</h3>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-0 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<div class="row">
+					<form name="form1" id="form1" action="contact-form/contact-form.php" method="post">
+						<div class="col-md-12">
+							<div class="form-group">
+								<!--<label for="contact-name">Name</label>-->
+								<input type="text" class="form-control" id="contact-name" name="name" placeholder="Full Name" onkeyup='validateName()' required>
+								<!--<span class='error-message' id='name-error'></span>-->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<!--<label for="contact-email">Email Address</label>-->
+								<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" onkeyup='validateEmail()' required>
+								<!--<span class='error-message' id='email-error'></span>-->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<!--<label for="contact-phone">Mobile Number</label>-->
+								<input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Mobile" onkeyup='validatePhone()'>							
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<!--<label for="Additional">Number of Guests</label>-->
+								<select class="form-control" name="dropdown" size="1" placeholder="Are you attending?">
+								<option class="specialColor" value="Attending">Yes! I am Attending</option>
+								<option class="specialColor" value="Not Attending">No! I am not Attending</option>
+								</select>
+								<br />
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<!--<label for='contactMessage'>Your Message</label>-->
+								<textarea class="form-control" cols="30" rows="7" id='contact-message'  name="message"  placeholder="Wishes, Suggestions and Advices" onkeyup='validateMessage()' required></textarea>
+								<!--<span class='error-message' id='message-error'></span>-->
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<button onclick='return validateForm()' type="submit" name="submit" class="btn btn-primary btn-block">RSVP Now</button>
+								<span class='error-message' id='submit-error'></span>
+							</div>
+						</div>
+					</form>
+					<div class="col-md-12">
+						<div class="form-group">								
+						</div>
+					</div>					
+					</div>
+				</div>
+			</div>	
+		</div>
 		</div>	
+		</div>
+		</section>
+	
+		<div id="fh5co-when-where" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 text-center animate-box">
+						<div class="wedding-events">
+							<div class="desc">
+								<p><strong>Greetings</strong></p>
+								<p>We are all a little weird and life’s a little weird, and when we find someone whose weirdness is compatible with ours, we join up with them and fall in mutual weirdness and call it love.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box">
+						<div class="wedding-events">
+							<div class="desc">
+								<p><strong>Greetings</strong></p>
+								<p>We are all a little weird and life’s a little weird, and when we find someone whose weirdness is compatible with ours, we join up with them and fall in mutual weirdness and call it love.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -159,32 +388,20 @@
 						</div>
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-							<a href="https://www.linkedin.com/in/sabareesh-ss-76596559"><i class="icon-linkedin"></i></a>
+								<a href="https://www.linkedin.com/in/sabareesh-ss-76596559"><i class="icon-linkedin2"></i></a>
 								<a href="https://twitter.com/Sabareesh_SS"><i class="icon-twitter2"></i></a>
 								<a href="https://www.facebook.com/SabareeshSathy"><i class="icon-facebook2"></i></a>
 								<a href="https://www.instagram.com/s.a.b.s.s/"><i class="icon-instagram"></i></a>
 							</p>
-							
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-
-	
-
 	</div>
 	<!-- END fh5co-page>-->
-							
-
 	</div>
 	<!-- END fh5co-wrapper -->
-
-	<!-- Google Map 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-	<!-- jQuery -->
-	<script src="dist/scripts.min.js"></script>
 	</body>
 </html>
 
