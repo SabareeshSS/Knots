@@ -14,7 +14,7 @@
 	<title>Sabareesh Weds Sharmili</title>
 	
 	<!-- Font and Favicon -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 	<!-- Animate.css -->
@@ -75,7 +75,7 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="#index" >Home</a></li>							
+							<li><a href="#index" >Home</a></li>							
 							<li><a href="#meetus" class="fh5co-sub-ddown">Meet Us</a></li>
 							<li><a href="#events">Events</a></li>
 							<li><a href="#where">When &amp; Where</a></li>
@@ -96,15 +96,14 @@
 				<div class="row row-bottom-padded-md animate-box">
 					<div class="col-md-6 col-md-offset-3 text-center">
 						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-							<img src="images/groom.jpg" class="img-responsive" ">
-							<h3>Sabareesh SS</h3>
+							<img src="images/groom.jpg" class="img-responsive"><h3>Sabareesh SS</h3>
 						</div>
+						<!--<div class="col-md-5 col-sm-5 col-xs-5 nopadding">-->
 						<div class="col-md-2 col-sm-2 col-xs-2 nopadding">
 							<h2 class="amp-center"><i class="icon-heart"></i></h2>
 						</div>
 						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
-							<img src="images/bride.jpg" class="img-responsive" ">
-							<h3>Sharmili PD</h3>
+							<img src="images/bride.jpg" class="img-responsive"><h3>Sharmili PD</h3>
 						</div>
 					</div>
 				</div>
@@ -285,15 +284,15 @@
 		
 		<!-- section rsvp -->
 		<section id="rsvp">
-		<div id="fh5co-started">
+		<div id="fh5co-started" data-stellar-background-ratio="0.5" style="background-image: url(images/Teppakulam.jpg);">
 		<div class="overlay"></div>					
-		<div class="fh5co-contact animate-box">
+		<div class="fh5co-contact animate-box >
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section">
 						<h2>Répondez S'il Vous Plaît</h2>
-						<h3>Please Fill-up the form to notify you that you're attending. Thanks.</h3>
+						<p><span>Please fill-up the form to notify that you're attending. Thanks!</span></p>
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-0 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
@@ -323,6 +322,7 @@
 							<div class="form-group">
 								<!--<label for="Additional">Number of Guests</label>-->
 								<select class="form-control" name="dropdown" size="1" placeholder="Are you attending?">
+								<option value="" disabled selected>Are you Attending?</option>
 								<option class="specialColor" value="Attending">Yes! I am Attending</option>
 								<option class="specialColor" value="Not Attending">No! I am not Attending</option>
 								</select>
