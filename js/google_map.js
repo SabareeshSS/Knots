@@ -22,12 +22,12 @@ function initMap() {
 	var contentString = '<div id="content">'+
 	      '<div id="siteNotice">'+
 	      '</div>'+
-	      '<h1 id="firstHeading" class="firstHeading">Welcome!</h1>'+
+	      '<h2 id="firstHeading" class="firstHeading">Welcome!</h2>'+
 	      '<div id="bodyContent">'+
 	      '<p>S V S V Subramaniam Pushpavalli Kalyana Mahal,' +
-	      'Behind Ganesh Theatre, D. D. Road, Pankajam Colony,' +
-		  'Kamarajar Salai, Madurai, Tamil Nadu 625009, India</p>'+
-	      '<p><b></b> <a href="#" target="_blank"> RSVP </a>'+
+	      'DD Road, Pankajam Colony, Kamarajar Salai,' +
+		  'Madurai, Tamil Nadu 625009, India</p>'+
+	      '<p><a href="#rsvp"> RSVP </a>'+
 	      '</p>'+
 	      '</div>'+
 	      '</div>';
