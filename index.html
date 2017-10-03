@@ -29,9 +29,26 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Customized style -->
 	<link rel="stylesheet" href="css/style.css">
-	
+	<!-- Loader -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+	$(window).load(function() {
+		$("#loading").fadeOut(500);
+	});
+	</script>
+		
 	</head>
+
 	<body>
+		
+	<div id="loading">
+      		<div id="loading-center">
+        		<div id="loading-center-absolute">
+          			<div id="object"></div>
+        		</div>
+     		 </div>
+   	</div>
+		
 	<div id="top"></div>
 	<div id="fh5co-wrapper">
 	<div id="fh5co-page">	
