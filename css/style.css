@@ -218,6 +218,13 @@ figure {
 	text-align:center;
 }
 
+.bor{
+	background:url('../images/bor.png') no-repeat;
+	height:50px;
+	width:350px;
+	margin:15px auto;
+}
+
 .loader {
   margin: 6em auto;
   font-size: 5px;
@@ -926,7 +933,6 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 #fh5co-started .form-control {
@@ -1511,9 +1517,9 @@ figure {
     bottom: 0;
     left: 40px;
     width: 2px;
-    margin-left: -1.5px;
+    margin-left: -0px;
     content: '';
-    background-color: #f1f1f1; }
+    background-color: #4d4c4c; }
   .timeline > li {
     position: relative;
     min-height: 50px;
@@ -1547,11 +1553,12 @@ figure {
       height: 80px;
       margin-left: 0;
       text-align: center;
-      color: white;
-      border: 7px solid #f1f1f1;
+      color: #4d4c4c;
+      border: 1px solid #4d4c4c;
       border-radius: 100%;
       background-color: #F69D9D; }
       .timeline > li .timeline-image h4 {
+		color: #4d4c4c;
         font-size: 10px;
         line-height: 14px;
         margin-top: 12px; }
@@ -1572,6 +1579,9 @@ figure {
     .timeline > li:last-child {
       margin-bottom: 0; }
   .timeline .timeline-heading h4 {
+	color: #4d4c4c;
+	font-size: 30px;
+	font-weight: 300;
     margin-top: 0;
     color: inherit; }
     .timeline .timeline-heading h4.subheading {
