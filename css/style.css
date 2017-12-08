@@ -802,6 +802,72 @@ figure {
   background: #F69D9D;
 }
 
+table {
+  border-collapse: separate;
+  background-repeat: no-repeat;
+  @include border-radius(5px);
+  margin:15px auto;
+  @include box-shadow(0px 0px 0px rgba(0,0,0,0.3));
+}
+
+thead th {
+  font-family: 'Patua One', cursive;
+  font-size:18px;
+  font-weight:400;
+  color:#F69D9D;
+  @include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
+  text-align:left;
+    padding:20px 50px 20px 50px;
+  @include background-image(linear-gradient(#646f7f, #4a5564));
+  border-top:1px solid #858d99;
+  border-bottom:1px solid #858d99;
+  &:first-child {
+   @include border-top-left-radius(5px); 
+  }
+
+  &:last-child {
+    @include border-top-right-radius(5px); 
+  }
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+    padding:20px 50px 20px 50px;
+  border-bottom:1px solid #e0e0e0;
+  
+}
+
+tbody tr:nth-child(2n) {
+  background:rgba(255, 255, 255, 0.7);
+}
+
+tbody tr:last-child td {
+  border-bottom:1px solid #858d99;
+  &:first-child {
+    @include border-bottom-left-radius(5px);
+  }
+  &:last-child {
+    @include border-bottom-right-radius(5px);
+  }
+}
+
+tbody:hover > tr td {
+  @include opacity(0.5);
+  
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+tbody:hover > tr:hover td {
+  @include text-shadow(none);
+  color:#2d2d2d;
+  @include opacity(1.0);
+}
+
 .fh5co-guest .display-tc h2 {
   color: #fff;
   font-size: 80px;
@@ -921,7 +987,6 @@ figure {
 }
 
 #fh5co-started {
-
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -932,13 +997,12 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
- 
 }
 
 #fh5co-started .form-control {
   background: rgba(0, 0, 0, 0.2);
   border: none !important;
-  color: #fff;
+  color: #4d4c4c;
   font-size: 16px !important;
   width: 100%;
   -webkit-transition: 0.5s;
@@ -947,21 +1011,21 @@ figure {
 }
 
 #fh5co-started .form-control::-webkit-input-placeholder {
-  color: #fff;
+  color: #4d4c4c;
 }
 
 #fh5co-started .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #fff;
+  color: #4d4c4c;
 }
 
 #fh5co-started .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #fff;
+  color: #4d4c4c;
 }
 
 #fh5co-started .form-control:-ms-input-placeholder {
-  color: #fff;
+  color: #4d4c4c;
 }
 
 #fh5co-started .form-control:focus {
@@ -996,12 +1060,12 @@ figure {
 
 #fh5co-started .heading-section h2 {
   margin-bottom: 20px;
-  color: rgba(255, 255, 255, 0.9);
+  color: #4d4c4c;
   
 }
 
 #fh5co-started .heading-section p {
-  color: rgba(255, 255, 255, 0.9);
+  color: #4d4c4c;
 }
 .groom-men img {
   margin-bottom: 20px;
@@ -1048,66 +1112,6 @@ figure {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.fh5co-blog {
-  margin-bottom: 60px;
-}
-
-.fh5co-blog a img {
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .fh5co-blog {
-    width: 100%;
-  }
-}
-
-.fh5co-blog .blog-text {
-  margin-bottom: 30px;
-  position: relative;
-  background: #fff;
-  width: 100%;
-  padding: 30px;
-  float: right;
-}
-
-.fh5co-blog .blog-text span {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.fh5co-blog .blog-text span.by {
-  color: rgba(0, 0, 0, 0.5);
-  margin-right: 7px;
-}
-
-.fh5co-blog .blog-text span.posted_date {
-  color: rgba(0, 0, 0, 0.5);
-  margin-right: 7px;
-}
-
-.fh5co-blog .blog-text span.comment a {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.fh5co-blog .blog-text span.comment a i {
-  color: #F69D9D;
-  padding-left: 4px;
-}
-
-.fh5co-blog .blog-text h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 300;
-  line-height: 1.5;
-  font-family: "Open Sans", Arial, sans-serif;
-}
-
-.fh5co-blog .blog-text h3 a {
-  color: rgba(0, 0, 0, 0.6);
 }
 
 #map {
