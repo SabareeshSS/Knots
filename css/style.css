@@ -921,9 +921,8 @@ figure {
 }
 
 #fh5co-started {
-  position: relative;
+
   background-size: cover;
-  background-position: bottom center;
   background-repeat: no-repeat;
 }
 
@@ -933,6 +932,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
+ 
 }
 
 #fh5co-started .form-control {
