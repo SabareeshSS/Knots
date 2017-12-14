@@ -725,7 +725,6 @@ figure {
 #fh5co-couple,
 #fh5co-countdown,
 #fh5co-groom-bride,
-#fh5co-blog-section,
 #fh5co-started,
 #fh5co-when-where,
 #fh5co-guest,
@@ -738,7 +737,6 @@ figure {
   #fh5co-couple,
   #fh5co-countdown,
   #fh5co-groom-bride,
-  #fh5co-blog-section,
   #fh5co-started,
   #fh5co-when-where,
   #fh5co-guest,
@@ -1002,7 +1000,7 @@ tbody:hover > tr:hover td {
 #fh5co-started .form-control {
   background: rgba(0, 0, 0, 0.2);
   border: none !important;
-  color: #4d4c4c;
+  color: #fff; 
   font-size: 16px !important;
   width: 100%;
   -webkit-transition: 0.5s;
@@ -1011,21 +1009,21 @@ tbody:hover > tr:hover td {
 }
 
 #fh5co-started .form-control::-webkit-input-placeholder {
-  color: #4d4c4c;
+  color: #fff; 
 }
 
 #fh5co-started .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #4d4c4c;
+  color: #fff;
 }
 
 #fh5co-started .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #4d4c4c;
+  color: #fff;
 }
 
 #fh5co-started .form-control:-ms-input-placeholder {
-  color: #4d4c4c;
+  color: #fff; 
 }
 
 #fh5co-started .form-control:focus {
@@ -1060,12 +1058,12 @@ tbody:hover > tr:hover td {
 
 #fh5co-started .heading-section h2 {
   margin-bottom: 20px;
-  color: #4d4c4c;
+  color: #fff;
   
 }
 
 #fh5co-started .heading-section p {
-  color: #4d4c4c;
+  color: #fff;
 }
 .groom-men img {
   margin-bottom: 20px;
