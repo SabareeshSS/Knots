@@ -89,9 +89,10 @@
 									<div class="slide" style="background-image: url(images/07.jpg);"></div>
 									<div class="slide" style="background-image: url(images/03.jpg);"></div>
 								</div>
+															<button class="button prev black" onclick="plusDivs(-1)">&#10094;</button>
+							<button class="button next black" onclick="plusDivs(1)">&#10095;</button>
 							</div>
-							<div class="button prev"></div>
-							<div class="button next"></div>
+
 						</div>
 					</div>
 				</div>
@@ -143,5 +144,24 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("slide");
+	if (n > x.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	x[slideIndex-1].style.display = "block";  
+	}
+	</script>
 	</body>
 </html>
