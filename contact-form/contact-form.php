@@ -23,7 +23,7 @@ Greetings		:	'.$_POST['message'].'
     
     // Authentication  
     $mail->Username   = "sawedssha@gmail.com"; 		// Your full Gmail address
-    $mail->Password   = "feb052018"; 			// Your Gmail password
+    $mail->Password   = "*****"; 			// Your Gmail password
       
     // Compose
     $mail->SetFrom($_POST['email'], $_POST['name']);
